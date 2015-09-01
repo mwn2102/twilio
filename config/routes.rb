@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   
   post 'twilio/voice' => 'twilio#voice'
-  
+  get 'twilio/message' => 'twilio#message'
+  post 'notifications/notify' => 'notifications#notify'
   
   
   # The priority is based upon order of creation: first created -> highest priority.
